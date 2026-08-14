@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multi_Network</title>
+    </head>
+    <body>
+        <h2>Project: Cisco Packet Tracer Enterprise Multi-Branch Network</h2>
+        <p>This project simulates a real-world enterprise network environment consisting of a Headquarters (HQ), Branch 1, Branch 2, and an ISP Router. The network was designed to demonstrate network segmentation, inter-site connectivity, centralized network services, dynamic routing, and Internet access.
+        The implementation includes VLANs for departmental separation, Router-on-a-Stick for Inter-VLAN Routing, OSPF for dynamic route exchange between sites, DHCP and DNS services hosted at HQ, NAT/PAT for Internet access, and WAN links connecting branch offices to headquarters.</p>
+        <h3>Topology</h3>
+        <img src="/images/Multinetwork.jpg" alt="">
+        <h3>Technology Used</h3>
+        <h4>Layer 2 Technologies</h4>
+        <ul>
+            <li>VLANs</li>
+            <li>802.1Q Trunking</li>
+            <li>Switch Port Configuration</li>
+        </ul>
+        <h4>Layer 3 Technologies</h4>
+        <ul>
+            <li>Inter-VLAN Routing (Router-on-a-Stick)</li>
+            <li>OSPF (Open Shortest Path First)</li>
+            <li>Static Default Route</li>
+        </ul>
+           <h4>Network Services</h4>
+        <ul>
+            <li>DHCP Server</li>
+            <li>DHCP Relay (ip helper-address)</li>
+            <li>DNS Server</li>
+            <li>HTTP Web Server</li>
+        </ul>
+           <h4>WAN Technologies</h4>
+        <ul>
+            <li>Point-to-Point Serial Links</li>
+            <li>Multi-Branch Connectivity</li>
+        </ul>
+        <h4>Security & Internet Access</h4>
+        <ul>
+            <li>NAT (Network Address Translation)</li>
+            <li>PAT (Port Address Translation)</li>
+            <li>ACLs (Access Control Lists)</li>
+        </ul><br>
+        <h3>Key Learnings</h3>
+        <h4>VLAN Segmentation</h4>
+        <ul>
+            <li>Created separate broadcast domains for HR, Finance, IT, and Servers.</li>
+            <li>Improved network organization and scalability.</li>
+        </ul>
+        <h4>Inter-VLAN Routing</h4>
+        <ul>
+            <li>Implemented Router-on-a-Stick using subinterfaces.</li>
+            <li>Enabled communication between departments while maintaining VLAN separation.</li>
+        </ul>
+        <h4>Dynamic Routing with OSPF</h4>
+        <ul>
+            <li>Configured OSPF between HQ and branch routers.</li>
+            <li>Learned route advertisement and automatic route learning.</li>
+        </ul>
+        <h4>WAN Connectivity</h4>
+        <ul>
+            <li>Established communication between HQ and remote branches using serial WAN links.</li>
+            <li>Verified connectivity through routing tables and end-to-end testing.</li>
+        </ul>
+        <h4>DHCP and DHCP Relay</h4>
+        <ul>
+            <li>Centralized IP address allocation at HQ.</li>
+            <li>Used DHCP relay agents for clients located in remote VLANs.</li>
+        </ul>
+        <h4>DNS Services</h4>
+        <ul>
+            <li>Configured hostname resolution through an internal DNS server.</li>
+            <li>Enabled users to access the web server using a domain name.</li>
+        </ul>
+        <h4>NAT/PAT</h4>
+        <ul>
+            <li>Configured Internet access using NAT Overload.</li>
+            <li>Learned how Inside and Outside NAT interfaces affect translation creation.</li>
+        </ul>
+        <h3>DHCP Pools</h3>
+        <img src="/images/dhcppools.jpg" alt="">
+        <h3>DNS Service</h3>
+        <img src="/images/dnsservice.jpg" alt="">
+        <img src="/images/dnsweb.jpg" alt="">
+        <h3>OSPF Route</h3>
+        <h4>HR Router</h4>
+        <img src="/images/hqiprouteospf.jpg" alt="">
+        <h4>Branch1 Router</h4>
+        <img src="/images/r1iprouteospf.jpg" alt="">
+        <h4>Branch2 Router</h4>
+        <img src="/images/r2iprouteospf.jpg" alt="">
+        <h3>OSPF Neighbor</h3>
+        <h4>HQ Router</h4>
+        <img src="/images/ospfneighbor.jpg" alt="">
+        <h4>Branch1 Router</h4>
+        <img src="/images/r1ospfneighbor.jpg" alt="">
+        <h4>Branch2 Router</h4>
+        <img src="/images/r2ospfneighbor.jpg" alt="">
+        <h3>NAT Translation and Statistics</h3>
+        <img src="/images/ipnattranslations.jpg" alt=""><br><br>
+        <img src="/images/ipnatstatistics.jpg" alt="">
+        <h3>Vlans</h3>
+        <h4>Branch 1 Switch</h4>
+        <img src="/images/br1sw.jpg" alt="">
+        <h4>Branch 2 Switch</h4>
+        <img src="/images/br2sw.jpg" alt="">
+    </body>
+</html>

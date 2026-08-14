@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.lab-header {
+    background-color: #0284c7;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.badge {
+    display: inline-block;
+    background: white;
+    color: #0284c7;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.lab-header h1 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 16px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #0284c7;
+}
+
+/* Topology */
+.topology-figure {
+    text-align: center;
+}
+
+.topology-figure img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Objectives */
+.objectives-list li {
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.step-detail {
+    display: block;
+    color: #666;
+    font-size: 14px;
+}
+
+.sub-list {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+/* Commands */
+.commands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.command-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+.command-item code {
+    display: block;
+    font-weight: bold;
+    color: #8b5cf6;
+    margin-bottom: 8px;
+}
+
+/* Learnings */
+.learnings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+.learning-item {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.learning-icon {
+    color: #0078d4;
+    margin-right: 8px;
+    font-weight: bold;
+}
